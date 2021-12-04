@@ -1,0 +1,16 @@
+:root {
+   --bg:linear-gradient(150deg, rgb(241, 241, 119) 50%, rgb(226, 109, 109) 50%);
+
+}
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+
