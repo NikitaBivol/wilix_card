@@ -10,8 +10,52 @@
    <title>card</title>
 </head>
 <body>
+      <div class="card-wrapper">
+         <div class="card-form">
+            <form class="form" action="#" method="post">
+               <label class="label" for="card-number">Card Number</label>
+                  <input class="area" type="text" id="card-number" name="number" tabindex="1">
+               <label class="label" for="card-name">Card Name</label>
+                  <input class="area" type="text" id="card-name" name="name" tabindex="2">
+               <label class="label" for="card-month">Expiration Date</label>
+                  <select class="area" type="text" id="card-month" name="month" placeholder="Month" tabindex="3">
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                     <option value="2028">2028</option>
+                     <option value="2029">2029</option>
+                     <option value="2030">2030</option>
+                  </select>
+               <select class="area" type="text" id="card-year" name="year" placeholder="Year" tabindex="4">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+               </select>
+               <label class="label" for="cvv">CVV</label>
+                  <input class="area" type="text" id="cvv" name="cvv" tabindex="5">
+                  <br>
+               <button type="submit" tabindex="6">Submit</button>
+            </form>
+         </div>
+         <div class="card-demo">
+
+         </div>
+      </div>
    
-   <script src=""></script>
+   <script src="/main.js"></script>
 </body>
 
 </html>

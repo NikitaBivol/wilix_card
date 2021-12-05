@@ -1,7 +1,4 @@
-:root {
-   --bg:linear-gradient(150deg, rgb(241, 241, 119) 50%, rgb(226, 109, 109) 50%);
 
-}
 
 html {
    box-sizing: border-box;
@@ -13,4 +10,81 @@ html {
    box-sizing: inherit;
 }
 
+ /* <div class="card-wrapper">
+ <div class="card-form">                  
+ <form class="form" action="post">                     
+ <input type="text" id="card-number">                     
+ <input type="text" id="card-name">                     
+ <input type="text" id="card-month">                    
+ <input type="text" id="card-year">                     
+ <input type="text" id="cvv">               
+ <button type="submit">Submit</button> */
+                  
+ body{
+  background:rgb(181, 234, 238);  
+ }
+ .card-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    position: absolute;
+    left: 25%;
+    border: none;
+   
+ }
 
+ .card-demo {
+    width: 550px;
+    height: 340px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    position: relative;
+    left: 0;
+    top: -530px;
+    background: #cecece;
+    display: none;
+ }
+
+ .card-form {
+   width: 650px;
+   height: 540px;
+   border: 1px solid gray;
+   border-radius: 15px;
+   top: 170px;
+   left:  -50px;
+   position: relative;
+   background: #ffffff;
+ }
+
+ .form{
+    width: 100%;
+    /* position: absolute; */
+    margin: 10px;
+   
+
+ }
+
+ .label{
+    display: block;
+ }
+
+ #card-number #card-name{
+    width: 80%;
+    
+    
+ }
+
+ #cvv{
+    width: 10%;
+   
+ }
+ .area{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 10px;
+ }
+
+ .area:focus{
+   border: 2px solid rgba(69, 129, 219, 0.5);
+ }
