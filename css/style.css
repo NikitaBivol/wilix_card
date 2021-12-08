@@ -1,5 +1,3 @@
-
-
 html {
    box-sizing: border-box;
 }
@@ -7,10 +5,10 @@ html {
 *,
 *::before,
 *::after {
-   box-sizing: inherit;
+   box-sizing: border-box;
 }
 
- /* <div class="card-wrapper">
+/* <div class="card-wrapper">
  <div class="card-form">                  
  <form class="form" action="post">                     
  <input type="text" id="card-number">                     
@@ -18,73 +16,203 @@ html {
  <input type="text" id="card-month">                    
  <input type="text" id="card-year">                     
  <input type="text" id="cvv">               
- <button type="submit">Submit</button> */
-                  
- body{
-  background:rgb(181, 234, 238);  
- }
- .card-wrapper {
-    width: 100%;
-    height: 100%;
-    border: 1px solid gray;
-    position: absolute;
-    left: 25%;
-    border: none;
-   
- }
+ <button type="submit">Submit</button>
+ <div class="card-demo-front">
+<img src="" alt="" class="card-image">
+<img src="" alt="" class="card-logo">
+<input type="text" id="card-demo-number">
+<input type="text" id="card-demo-month">
+<input type="text" id="card-demo-year">
+</div> */
 
- .card-demo {
-    width: 550px;
-    height: 340px;
-    border: 1px solid gray;
-    border-radius: 15px;
-    position: relative;
-    left: 0;
-    top: -530px;
-    background: #cecece;
-    display: none;
- }
+body {
+   background: rgb(181, 234, 238);
+}
 
- .card-form {
+.card-wrapper {
+   width: 100%;
+   height: 100%;
+   border: 1px solid gray;
+   position: relative;
+   left: 25%;
+   border: none;
+}
+
+.card-form {
    width: 650px;
    height: 540px;
    border: 1px solid gray;
    border-radius: 15px;
    top: 170px;
-   left:  -50px;
+   left: -50px;
    position: relative;
    background: #ffffff;
- }
+}
 
- .form{
-    width: 100%;
-    /* position: absolute; */
-    margin: 10px;
-   
+.form {
+   width: 100%;
+   position: absolute;
+   margin: 10px;
+   top: 200px;
+}
 
- }
+.label {
+   display: block;
+}
 
- .label{
-    display: block;
- }
+#cvv {
+   width: 10%;
+}
 
- #card-number #card-name{
-    width: 80%;
-    
-    
- }
+.area {
+   height: 40px;
+   border-radius: 5px;
+   border: 1px solid rgba(128, 128, 128, 0.5);
+   margin-bottom: 10px;
+}
 
- #cvv{
-    width: 10%;
-   
- }
- .area{
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid rgba(128, 128, 128, 0.5);
-    margin-bottom: 10px;
- }
-
- .area:focus{
+.area:focus {
    border: 2px solid rgba(69, 129, 219, 0.5);
- }
+}
+
+.button {
+   width: 95%;
+   height: 40px;
+   background: #4b5bec;
+   border: none;
+   border-radius: 5px;
+   color: #ffffff;
+}
+
+/* card demo styles start */
+.card-demo {
+   width: 550px;
+   height: 340px;
+   /* border: 1px solid gray; */
+   border-radius: 15px;
+   position: relative;
+   left: 0;
+   top: -530px;
+
+   /* display: none; */
+}
+
+.card-demo-back {
+   position: absolute;
+   width: 550px;
+   height: 340px;
+   right: 0;
+   top: 0;
+   z-index: -1;
+   background: #b64949;
+   border-radius: 15px;
+
+}
+
+.card-demo-back-line {
+   width: 100%;
+   height: 60px;
+   background: #050505;
+   position: absolute;
+   top: 40px;
+
+}
+
+.card-demo-front {
+   position: absolute;
+   width: 550px;
+   height: 340px;
+   right: 0;
+   top: 0;
+   z-index: 1;
+   background: #4db649;
+   border-radius: 15px;
+
+}
+
+
+#cvv-demo {
+   position: absolute;
+   width: 90%;
+   height: 60px;
+   margin: 25px;
+   bottom: 100px;
+   border-radius: 5px;
+   border: none;
+   font-size: 40px;
+   text-align: right;
+}
+
+.card-image {
+   height: 50px;
+   position: absolute;
+   top: 40px;
+   left: 30px;
+}
+
+.card-logo {
+   height: 50px;
+   position: absolute;
+   top: 40px;
+   right: 30px;
+
+}
+
+#card-demo-number {
+   position: absolute;
+   width: 90%;
+   margin: 0 5%;
+   background: #f1f1f1;
+   font-size: 30px;
+   padding: 5px;
+   border: none;
+   top: 145px;
+   border-right: 5px;
+   border-radius: 5px;
+}
+
+#card-demo-name {
+   position: absolute;
+   width: 40%;
+   margin: 0 5%;
+   background: #f1f1f1;
+   font-size: 30px;
+   padding: 5px;
+   border: none;
+   top: 240px;
+   border-right: 5px;
+   border-radius: 5px;
+
+}
+
+#card-demo-month {
+   position: absolute;
+   width: 10%;
+   margin: 0 5%;
+   background: #f1f1f1;
+   font-size: 30px;
+   padding: 5px;
+   border: none;
+   top: 240px;
+   right: 70px;
+   border-right: 5px;
+   border-radius: 5px;
+
+}
+
+#card-demo-year {
+   position: absolute;
+   width: 10%;
+   margin: 0 5%;
+   background: #f1f1f1;
+   font-size: 30px;
+   padding: 5px;
+   border: none;
+   top: 240px;
+   right: 0px;
+   border-right: 5px;
+   border-radius: 5px;
+
+}
+
+/* card demo styles end */
